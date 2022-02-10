@@ -5,13 +5,20 @@
 //  Created by e.shirashiyani on 2/8/22.
 //
 
+ 
 import SwiftUI
+import Firebase
+
 
 @main
 struct ChatAppDemoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+    init() {
+           FirebaseApp.configure()
+       }
+       
+       var body: some Scene {
+           WindowGroup {
+               ContentView()
+           }
+       }
+   }
